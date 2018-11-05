@@ -14,3 +14,9 @@
 
 
 # Commit when you finish working on these questions!
+
+dictionary_classroom = {"chairs": 35, "name": "CR3", "windows_count": 8, "glare": True}
+
+num_list = [1,2,3,4]
+
+teacher_list = ["zakk", "don", "jimmy", "hector"]

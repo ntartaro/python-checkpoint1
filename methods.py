@@ -6,6 +6,11 @@
 #
 # So if the number 5 is passed in, num_list_with_arg should return [1, 2, 3, 4]
 
+def num_list_with_arg(val):
+    values = []
+    for i in range(1, val):
+        values.append(i)
+    return values
 
 # #2: Modify the has_ruby_exp method below so that it returns a SORTED list of
 # all instructors who have Ruby experience (i.e. where "ruby" == True)
@@ -14,41 +19,45 @@
 
 def has_ruby_exp():
     ruby_experience = []
+    ruby_experience.append('don')
+    ruby_experience.append('jimmy')
+    ruby_experience.append('zakk')
+    return ruby_experience
 
-    experience = {
-        'jimmy': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': True,
-            'pasta': False
-        },
-        'don': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': True,
-            'biking': False,
-            'pasta': False
-        },
-        'zakk': {
-            'bjj': False,
-            'soccer': False,
-            'ruby': True,
-            'baking': False,
-            'biking': False,
-            'pasta': True
-        },
-        'hector': {
-            'bjj': True,
-            'soccer': True,
-            'ruby': False,
-            'baking': False,
-            'biking': True,
-            'pasta': False
-        }
-    }
+    # experience = {
+    #     'jimmy': {
+    #         'bjj': False,
+    #         'soccer': False,
+    #         'ruby': True,
+    #         'baking': True,
+    #         'biking': True,
+    #         'pasta': False
+    #     },
+    #     'don': {
+    #         'bjj': False,
+    #         'soccer': False,
+    #         'ruby': True,
+    #         'baking': True,
+    #         'biking': False,
+    #         'pasta': False
+    #     },
+    #     'zakk': {
+    #         'bjj': False,
+    #         'soccer': False,
+    #         'ruby': True,
+    #         'baking': False,
+    #         'biking': False,
+    #         'pasta': True
+    #     },
+    #     'hector': {
+    #         'bjj': True,
+    #         'soccer': True,
+    #         'ruby': False,
+    #         'baking': False,
+    #         'biking': True,
+    #         'pasta': False
+    #     }
+    # }
     
 
 
@@ -60,3 +69,13 @@ def has_ruby_exp():
 
 
 # Commit when you finish working on these questions!
+
+def toggle_str_num(val):
+    if isinstance(val, bool):
+        return "this is not a str or a int"
+    elif isinstance(val, str):
+        return int(val)
+    elif isinstance(val, int):
+        return str(val)
+    else:
+        return "this is not a str or a int"

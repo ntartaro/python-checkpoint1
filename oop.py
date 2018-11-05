@@ -41,3 +41,34 @@
 
 
 # Commit when you finish working on these questions!
+
+class Vehicle(object):
+    def __init__(self, vehicle_type, wheel_count, name, cost, colors, vehicle_brand, mpg):
+        self.vehicle_type = str
+        self.wheel_count = int
+
+
+class Motorcycle(Vehicle):
+    def __init__(self, wheel_drive):
+        self.wheel_drive = str
+        # super(Motorcycle, self).__init__(self, wheel_drive, wheel_count)
+        # self.wheel_count = 2
+
+    def pop_wheelie(bool):
+        if wheel_count != 2:
+            return False
+
+
+class Car(Vehicle):
+    def __init__(self, wheel_drive):
+        self.wheel_drive = str
+    def can_drive(self):
+        return 'Vrrooooom Vroooom'
+
+
+class Truck(Vehicle):
+    def __init__(self, wheel_drive):
+        self.wheel_drive = str
+
+    def rev_engine(self):
+        return 'revvvvvreeeev'
